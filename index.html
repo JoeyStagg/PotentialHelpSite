@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUU Help Site</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+    
+<body>
+    <div>
+        <h1>What would you like help with today?</h1>
+    </div>
+    <div>
+        <p>Select anything you need help with:</p>
+    </div>
+    <div>
+        <div>
+            <input type="checkbox" id="register-drop" onclick="studentType()">Register for or Dropping a Course 
+        </div>        
+        <div id="hidden-register" style="display:none">
+            <div>
+                <p>What kind of student are you?</p>
+            </div>
+            <div>
+                <input type="checkbox" id="suu-online-check">SUU Online
+            </div>
+            <div>
+                <input type="checkbox" id ="speedway-check">Speedway
+            </div>
+            <div>
+                <input type="checkbox" id="accelerated-check">Accelerated Program
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="when-register">When can I Register?
+        </div>
+        <div>
+            <input type="checkbox" id="start-dates">When are Semester Start Dates?
+        </div>
+        <div>
+            <input type="checkbox" id="plan">Planning for Upcoming Semesters
+        </div>
+        <div>
+            <input type="checkbox" id="appointment">Schedule an Appointment with Your Advisor
+        </div>
+        <div>
+            <button id="resources" onclick="findResources()">Find Resources</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>Resources:</p>
+        </div>
+        <div>
+            <p id="register-text" style="display:none">Resources for register/dropping course</p>
+            <p id="suu-online-video-text" style="display:none"><a href="https://drive.google.com/file/d/1QCEImLOjJcEwjIH9zhdGXPLoCRi9n3Bu/view?usp=share_link" target="_blank">SUU Online Registration Video</a></p>
+            <p id="suu-online-pdf-text" style="display:none"><a href="https://drive.google.com/file/d/1v7h7rdJ0vApO3AB0YHEcnPhAdF_jpY6p/view?usp=share_link" target="_blank">SUU Online Registration PDF</a></p>
+            <p id="speedway-video-text" style="display:none"><a href="https://drive.google.com/file/d/1t9xkfHm8WpbUq1SWcYo9UgUaHCpDOt1M/view?usp=share_link" target="_blank">Speedway Registration Video</a></p>
+            <p id="speedway-pdf-text" style="display:none"><a href="https://drive.google.com/file/d/1oIZFbaLg5njPwlTFesIKxjxB4FJNJmF4/view?usp=share_link" target="_blank">Speedway Registration PDF</a></p>
+            <p id="accelerated-video-text" style="display:none"><a href="https://drive.google.com/file/d/10crfKDMwlIC15nX-iePknZazZp-fyNoC/view?usp=share_link" target="_blank">Accelerated Program Registration Video</a></p>
+            <p id="accelerated-pdf-text" style="display:none"><a href="https://drive.google.com/file/d/1QCEImLOjJcEwjIH9zhdGXPLoCRi9n3Bu/view?usp=share_link" target="_blank">Accelerated Program Registration PDF</a></p>
+            <p id="drop-course-pdf" style="display:none"><a href="https://www.google.com/url?client=internal-element-cse&cx=011765994170274145976:qcfkfpmck2w&q=https://www.suu.edu/registrar/pdf/how-to-drop-a-class.pdf&sa=U&ved=2ahUKEwjC7-2oit_9AhXph-4BHeFsCcUQFnoECAEQAQ&usg=AOvVaw1st-eaTyH8Cdrvgs3Nc6KN" target="_blank">How to Drop a Course PDF</a></p>
+            <p id="online-outreach-number-text" style="display:none">Online Outreach Number: <a href="tel:435-865-8653" target="_blank">435-865-8653</a></p>
+            <p id="registration-dates-text" style="display:none"><a href="https://www.suu.edu/registrar/reg-schedule.html" target="_blank">Registration Dates</a></p>
+            <p id="semester-start-dates-text" style="display:none"><a href="https://www.suu.edu/registrar/deadlines.html" target="blank">Registration Deadlines</a></p> <!-- THE NAMES FOR THIS IN THE SCRIPT IS WEIRD-->
+            <p id="degree-works-info-text" style="display:none"><a href="https://docs.google.com/document/d/1B06ze0uIe_PnLfha-wTibiNvFRCCmKHC0gHk6tX9W2M/edit?usp=sharing" target="_blank">Degree Works Information</a></p>
+            <p id="degree-plan-request-text" style="display:none"><a href="https://airtable.com/shrUnWFD8vlds0cWA" target="_blank">Degree Plan Request</a></p>
+            <p id="online-outreach-number-text-2" style="display:none">Online Outreach Number: <a href="tel:435-865-8653" target="_blank">435-865-8653</a></p>
+            <p id="schedule-appointment-text" style="display:none"><a href="https://calendly.com/d/gp9-fc8-j8w" target="_blank">Schedule an Appointment with Your Advisor</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
